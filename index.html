@@ -1,44 +1,56 @@
-<link rel = "stylesheet" href = "links.css"/>
+<link rel = "stylesheet" href = "index.css"/>
 
-<h1 style = "color:aqua">Largest</h1>
-<h2 style = "color: blue;">Bit smaller</h2>
-<h3>Even smaller!</h3>
-<h4>Smaller!!</h4>
-<h5>Getting smaller...</h5>
-<h6>Smallest!!!</h6>
+<html>
+    <body>
+        <header>
+            <h1 style = "font-size:75px;background-color:yellow;color:purple">Curtis' Links to Useful Things!</h1>
+        </header>
 
-<p style = "background-color: bisque;">This is a paragraph, wow! The background is bisque!!</p>
-<p>Let's write about Matt and Chase now.</p>
-<p>
-  What if you wanted to write lengthier text? Say you wanted to write a book or
-  a paragraph that explains why Matt is so great and how he was cheated out of
-  his own html tag. Or maybe we want to serenade Chase about how he's such a
-  cool person and a fantastic teacher.
-</p>
-
-
-<img
-  src="https://avatars0.githubusercontent.com/u/14893287?s=400&u=7a0d69cf5f16e415439c20017f85f9c8dc4582d1&v=4"
-/>
-
-<a href="https://teachla.uclaacm.com/">A link to the ACM TeachLA website!</a>
-
-<a style="background-color:blanchedalmond;" href="https://teachla.uclaacm.com/"
-  >a fancy link</a
->
-<p style="font-size:75px;">biiig text</p>
-<p style="font-weight:bold;">i'm feeling bold today</p>
-<footer style="text-align:center;color:green;">
-  this footer is centered and green!
-</footer>
+        <script>
+            let click = 0;
+            function buttonClick(){
+                click = click + 1;
+                document.getElementById('num').innerHTML = click;
+            }
+        </script>
+        <button onclick="buttonClick()">Click me!</button>
+        <p id="num"></p>
 
 
-<script>
-  let click = 0;
-  function buttonClick() {
-      click = click + 1; 
-      document.getElementById('num').innerHTML = click
-  }
-</script>
-<button onclick="buttonClick()">Click Me</button>
-<p id="num"></p>
+        <div class = "text-card-mb" style = "position:relative;">
+
+        <a href = "https://docs.google.com/document/d/1CspYYqZMDsu2QQrX2FulwTGjrjkrgP2Ydje1k6sQ01Y/edit"
+        target = "_blank" style = "font-size:45px" class = "brown-text brown-border">Stuff to Learn</a>
+        <br><br>
+        <a href = "https://docs.google.com/spreadsheets/d/1ge4PMX5rgRXhgUOnwnhOYf8ESFdw9qSc6WVeUnfm3B8/edit#gid=0"
+        target = "_blank" style = "font-size:45px" class = "brown-text brown-border">Workout Routine</a>
+        <br><br>
+        <a href = "https://docs.google.com/document/d/1z1vsm9_iu6w10hQtLo-lQWRoTk3maWH7P9Lo3tJevXE/edit"
+        target = "_blank" style = "font-size:45px" class = "brown-text brown-border">Shows to Watch</a>
+        <br><br>
+        <a href = "https://docs.google.com/document/d/1YigCQi31lM8dkAYwSt6S6WS00CSWci3hsoLU-sh982I/edit"
+        target = "_blank" style = "font-size:45px" class = "brown-text brown-border">Shopping List</a>
+        <br><br>
+        <a href = "https://docs.google.com/document/d/1VXb83lbxlfdF5YWq47jRZsOCVJlSTanwXB81t2pDPvM/edit"
+        target = "_blank" style = "font-size:45px" class = "brown-text brown-border">Class Schedule</a>
+
+        </div>
+
+        <img src = "https://i.imgur.com/EH4H3xf.jpeg" style = "width:auto; height:500px">
+        <img src = "https://media.tenor.com/lplqzKb-4iUAAAAM/you-should-be-studying-cute-cat.gif" style = "width:auto; height:500px">
+
+
+
+
+
+        <footer style = "margin-bottom:0px;">
+            <h3 style = "font:italic;font-size:60px;color:darkblue;background-color:lightcyan;">Get to <highlight-red>fucking</highlight-red> work!</h3>
+            <img src = "https://i.imgur.com/q04YrKj.jpg" class = "img-container">
+            <img src = "https://i.imgur.com/ko7b1HU.jpg" class = "img-container">     
+            <img src = "https://i.imgur.com/GgG9qN8.jpg" class = "img-container">     
+            <img src = "https://i.imgur.com/Dn7XGQ3.jpg" class = "img-container">     
+            <img src = "https://i.imgur.com/NGyK95q.jpg" class = "img-container">  
+
+        </footer>
+    </body>
+</html>

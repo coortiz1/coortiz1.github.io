@@ -1,0 +1,43 @@
+/*class selector*/
+.brown-text{
+    color:brown;
+    border-color:brown;
+}
+.brown-border{
+    border-style:solid;
+    border-color:brown;
+}
+/*type selector*/
+highlight-red{
+    color:red;
+    background-color:yellow;
+}
+/*universeal selector*/
+*{
+    margin:10px;
+}
+.img-container{
+    float:left;
+    width:200px;
+    height:auto;
+    padding:5px;
+}
+.padded-bluebox{
+    background-color:lightblue;
+    width:300px;
+    height:300px;
+    padding:10px;
+}
+.text-card{
+    width:200px;
+    height:200px;
+    padding: 10px;
+    border:1px solid black; 
+}
+.text-card-mb {
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    border: 5px solid red;
+    margin-bottom: 50px;
+  }
