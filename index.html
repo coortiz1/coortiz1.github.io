@@ -3,71 +3,47 @@
 
 <html>
     <body>
+        <script src = "./index.js"></script>
         <header>
             <h1 style = "font-size:75px;background-color:yellow;color:purple">Curtis' Links to Useful Things!</h1>
         </header>
 
-        <script>
-            let click = 0;
-            function buttonClick(){
-                click = click + 1;
-                document.getElementById('num').innerHTML = click;
-            }
-        </script>
         <button onclick="buttonClick()">Click me!</button>
         <p id="num"></p>
 
+        <div class = "text-card-mb" style = "position:relative;font-size:45px;">
 
-        <div class = "text-card-mb" style = "position:relative;">
-
-        <a href = "https://docs.google.com/document/d/1CspYYqZMDsu2QQrX2FulwTGjrjkrgP2Ydje1k6sQ01Y/edit"
-        target = "_blank" style = "font-size:45px" class = "brown-text brown-border">Stuff to Learn</a>
-        <br><br>
-        <a href = "https://docs.google.com/spreadsheets/d/1ge4PMX5rgRXhgUOnwnhOYf8ESFdw9qSc6WVeUnfm3B8/edit#gid=0"
-        target = "_blank" style = "font-size:45px" class = "brown-text brown-border">Workout Routine</a>
-        <br><br>
-        <a href = "https://docs.google.com/document/d/1z1vsm9_iu6w10hQtLo-lQWRoTk3maWH7P9Lo3tJevXE/edit"
-        target = "_blank" style = "font-size:45px" class = "brown-text brown-border">Shows to Watch</a>
-        <br><br>
-        <a href = "https://docs.google.com/document/d/1YigCQi31lM8dkAYwSt6S6WS00CSWci3hsoLU-sh982I/edit"
-        target = "_blank" style = "font-size:45px" class = "brown-text brown-border">Shopping List</a>
-        <br><br>
-        <a href = "https://docs.google.com/document/d/1VXb83lbxlfdF5YWq47jRZsOCVJlSTanwXB81t2pDPvM/edit"
-        target = "_blank" style = "font-size:45px" class = "brown-text brown-border">Class Schedule</a>
-
+            <a href = "https://docs.google.com/document/d/1CspYYqZMDsu2QQrX2FulwTGjrjkrgP2Ydje1k6sQ01Y/edit"
+            target = "_blank" class = "brown-text brown-border">Stuff to Learn</a>
+            <br><br>
+            <a href = "https://docs.google.com/spreadsheets/d/1ge4PMX5rgRXhgUOnwnhOYf8ESFdw9qSc6WVeUnfm3B8/edit#gid=0"
+            target = "_blank" class = "brown-text brown-border">Workout Routine</a>
+            <br><br>
+            <a href = "https://docs.google.com/document/d/1z1vsm9_iu6w10hQtLo-lQWRoTk3maWH7P9Lo3tJevXE/edit"
+            target = "_blank" class = "brown-text brown-border">Shows to Watch</a>
+            <br><br>
+            <a href = "https://docs.google.com/document/d/1YigCQi31lM8dkAYwSt6S6WS00CSWci3hsoLU-sh982I/edit"
+            target = "_blank" class = "brown-text brown-border">Shopping List</a>
+            <br><br>
+            <a href = "https://docs.google.com/document/d/1VXb83lbxlfdF5YWq47jRZsOCVJlSTanwXB81t2pDPvM/edit"
+            target = "_blank" class = "brown-text brown-border">Class Schedule</a>
         </div>
-
-        <img src = "https://i.imgur.com/EH4H3xf.jpeg" style = "width:auto; height:500px">
-        <img src = "https://media.tenor.com/lplqzKb-4iUAAAAM/you-should-be-studying-cute-cat.gif" style = "width:auto; height:500px">
+        
+        <div>
+            <h2>To Do:</h2>
+            <button style = "float:left; font-size:30px" onclick = "cross()">&#x2713;</button>
+            <p id = "cross1" style = "position:relative;top:10px;text-decoration:none;">Exercise</p>
+        </div>
+        <br>
+        <div>
+            <img src = "https://i.imgur.com/EH4H3xf.jpeg" style = "width:auto; height:500px">
+            <img src = "https://media.tenor.com/lplqzKb-4iUAAAAM/you-should-be-studying-cute-cat.gif" style = "width:auto; height:500px">
+        </div>
 
         <footer style = "margin-bottom:0px;">
             <h3 style = "font:italic;font-size:60px;color:darkblue;background-color:lightcyan;">Get to <highlight-red>fucking</highlight-red> work!</h3>
-
             <img src = "https://i.imgur.com/q04YrKj.jpg" style = "height:400px;width:auto" id = "myImage" onclick = "expressions()">
-
-
         </footer>
 
-        <script>
-            function expressions(){
-                var image = document.getElementById('myImage');
-                if (image.src.match("https://i.imgur.com/q04YrKj")){
-                    image.src = "https://i.imgur.com/ko7b1HU.jpg"
-                }
-                else if (image.src.match("https://i.imgur.com/ko7b1HU.jpg")){
-                    image.src = "https://i.imgur.com/GgG9qN8.jpg"
-                }
-                else if (image.src.match("https://i.imgur.com/GgG9qN8.jpg")){
-                    image.src = "https://i.imgur.com/Dn7XGQ3.jpg"
-                }
-                else if (image.src.match("https://i.imgur.com/Dn7XGQ3.jpg")){
-                    image.src = "https://i.imgur.com/NGyK95q.jpg"
-                }
-                else{
-                    image.src = "https://i.imgur.com/q04YrKj.jpg"
-                }                
-            }
-
-        </script>
     </body>
 </html>
