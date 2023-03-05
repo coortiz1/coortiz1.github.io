@@ -23,8 +23,8 @@ function expressions(){
     }                
 }
 
-function cross(){
-    var elem = document.getElementById("cross1");
+function cross(id){
+    var elem = document.getElementById(id);
     if (elem.style.textDecoration === "line-through red"){
         elem.style.textDecoration = "none";
     }
@@ -33,4 +33,13 @@ function cross(){
 
     }
 
+}
+const ids = ['cross1','cross2','cross3','cross4','cross5','cross6'];
+function reset(){
+    for (let i = 0; i < ids.length; i++){
+        if (document.getElementById(ids[i]).style.textDecoration === "line-through red")
+        {
+            document.getElementById(ids[i]).style.textDecoration = "none";
+        }
+    }
 }

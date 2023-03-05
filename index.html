@@ -31,10 +31,30 @@
         
         <div>
             <h2>To Do:</h2>
-            <button style = "float:left; font-size:30px" onclick = "cross()">&#x2713;</button>
-            <p id = "cross1" style = "position:relative;top:10px;text-decoration:none;">Exercise</p>
+            <br>
+            <button style = "font-size:30px" onclick = "cross('cross1')">Done</button>
+            <p id = "cross1" class = "button-next">Exercise</p>
+            
+            <br>
+            <button style = "font-size:30px" onclick = "cross('cross2')">Done</button>
+            <p id = "cross2" class = "button-next" >Sleep at 12AM-1AM</p>
+
+            <br>
+            <button style = "font-size:30px" onclick = "cross('cross3')">Done</button>
+            <p id = "cross3" class = "button-next">Leetcode</p>
+            <br>
+            <button style = "font-size:30px" onclick = "cross('cross4')">Done</button>
+            <p id = "cross4" class = "button-next">Apply for Internships</p>
+            <br>
+            <button style = "font-size:30px" onclick = "cross('cross5')">Done</button>
+            <p id = "cross5" class = "button-next">Self Learn</p>
+            <br>
+            <button style = "font-size:30px" onclick = "cross('cross6')">Done</button>
+            <p id = "cross6" class = "button-next">Shower in Lukewawrm Water</p>
+            <br>
+            <button onclick = "reset()" style = "font-size:30px">Reset</button>
         </div>
-        <br>
+
         <div>
             <img src = "https://i.imgur.com/EH4H3xf.jpeg" style = "width:auto; height:500px">
             <img src = "https://media.tenor.com/lplqzKb-4iUAAAAM/you-should-be-studying-cute-cat.gif" style = "width:auto; height:500px">
