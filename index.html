@@ -3,57 +3,64 @@
 
 <html>
     <body>
-        <script src = "./index.js"></script>
+
+        
         <header>
-            <h1 style = "font-size:75px;background-color:yellow;color:purple">Curtis' Links to Useful Things!</h1>
+            <h1 style = "font-size:75px;background-color:yellow;color:purple;margin-bottom:40px;text-align:center">Curtis' Links to Useful Things!</h1>
         </header>
 
-        <button onclick="buttonClick()">Click me!</button>
-        <p id="num"></p>
-
-        <div class = "text-card-mb" style = "position:relative;font-size:45px;">
-
-            <a href = "https://docs.google.com/document/d/1CspYYqZMDsu2QQrX2FulwTGjrjkrgP2Ydje1k6sQ01Y/edit"
-            target = "_blank" class = "brown-text brown-border">Stuff to Learn</a>
-            <br><br>
-            <a href = "https://docs.google.com/spreadsheets/d/1ge4PMX5rgRXhgUOnwnhOYf8ESFdw9qSc6WVeUnfm3B8/edit#gid=0"
-            target = "_blank" class = "brown-text brown-border">Workout Routine</a>
-            <br><br>
-            <a href = "https://docs.google.com/document/d/1z1vsm9_iu6w10hQtLo-lQWRoTk3maWH7P9Lo3tJevXE/edit"
-            target = "_blank" class = "brown-text brown-border">Shows to Watch</a>
-            <br><br>
-            <a href = "https://docs.google.com/document/d/1YigCQi31lM8dkAYwSt6S6WS00CSWci3hsoLU-sh982I/edit"
-            target = "_blank" class = "brown-text brown-border">Shopping List</a>
-            <br><br>
-            <a href = "https://docs.google.com/document/d/1VXb83lbxlfdF5YWq47jRZsOCVJlSTanwXB81t2pDPvM/edit"
-            target = "_blank" class = "brown-text brown-border">Class Schedule</a>
-        </div>
-        
-        <div>
-            <h2>To Do:</h2>
-            <br>
-            <button style = "font-size:30px" onclick = "cross('cross1')">Done</button>
-            <p id = "cross1" class = "button-next">Exercise</p>
+        <ul  class = "text-card-mb" style = "position:relative;font-size:60px;list-style-type:none;line-height:150%;display:inline-block;padding-top:60px;height:550px">
+            <li><a href = "https://docs.google.com/document/d/1CspYYqZMDsu2QQrX2FulwTGjrjkrgP2Ydje1k6sQ01Y/edit"
+            target = "_blank">Stuff to Learn</a></li>
             
-            <br>
-            <button style = "font-size:30px" onclick = "cross('cross2')">Done</button>
-            <p id = "cross2" class = "button-next" >Sleep at 12AM-1AM</p>
+            <li><a href = "https://docs.google.com/spreadsheets/d/1ge4PMX5rgRXhgUOnwnhOYf8ESFdw9qSc6WVeUnfm3B8/edit#gid=0"
+            target = "_blank" >Workout Routine</a></li>
 
-            <br>
-            <button style = "font-size:30px" onclick = "cross('cross3')">Done</button>
-            <p id = "cross3" class = "button-next">Leetcode</p>
-            <br>
-            <button style = "font-size:30px" onclick = "cross('cross4')">Done</button>
-            <p id = "cross4" class = "button-next">Apply for Internships</p>
-            <br>
-            <button style = "font-size:30px" onclick = "cross('cross5')">Done</button>
-            <p id = "cross5" class = "button-next">Self Learn</p>
-            <br>
-            <button style = "font-size:30px" onclick = "cross('cross6')">Done</button>
-            <p id = "cross6" class = "button-next">Shower in Lukewawrm Water</p>
-            <br>
-            <button onclick = "reset()" style = "font-size:30px">Reset</button>
+            <li><a href = "https://docs.google.com/document/d/1z1vsm9_iu6w10hQtLo-lQWRoTk3maWH7P9Lo3tJevXE/edit"
+            target = "_blank" >Shows to Watch</a></li>
+
+            <li><a href = "https://docs.google.com/document/d/1YigCQi31lM8dkAYwSt6S6WS00CSWci3hsoLU-sh982I/edit"
+            target = "_blank" >Shopping List</a></li>
+
+            <li><a href = "https://docs.google.com/document/d/1VXb83lbxlfdF5YWq47jRZsOCVJlSTanwXB81t2pDPvM/edit"
+            target = "_blank" >Class Schedule</a></li>
+        </ul>
+        
+        <div class = "text-card-mb" style = "width:600px;display:inline-block;">
+            <h1 style = "font-size:40px;text-align:center">To Do:</h1>
+            <ul  style = "list-style-type:none;line-height:0%">
+
+                <li>
+                    <button style = "font-size:30px" onclick = "cross('cross1'); exercise(); updateCount();">Done</button>
+                    <p id = "cross1" class = "button-next"></p>
+                </li>
+                <li>
+                    <button style = "font-size:30px" onclick = "cross('cross2'); updateCount();">Done</button>
+                    <p id = "cross2" class = "button-next">Sleep at 12AM-1AM</p>
+                </li>
+                <li>
+                    <button style = "font-size:30px" onclick = "cross('cross3'); updateCount();">Done</button>
+                    <p id = "cross3" class = "button-next">Leetcode</p>
+                </li>
+                <li>
+                    <button style = "font-size:30px" onclick = "cross('cross4'); updateCount();">Done</button>
+                    <p id = "cross4" class = "button-next">Apply for Internships</p>
+                </li>
+                <li>
+                    <button style = "font-size:30px" onclick = "cross('cross5'); updateCount();">Done</button>
+                    <p id = "cross5" class = "button-next">Self Learn</p>
+                </li>
+                <li>
+                    <button style = "font-size:30px" onclick = "cross('cross6'); updateCount();">Done</button>
+                    <p id = "cross6" class = "button-next">Shower in Lukewarm Water</p>
+                </li>
+                <li>
+                    <button onclick = "reset(); updateCount();" style = "font-size:30px">Reset</button>
+                </li>
+            </ul>
         </div>
+
+
 
         <div>
             <img src = "https://i.imgur.com/EH4H3xf.jpeg" style = "width:auto; height:500px">
@@ -64,6 +71,6 @@
             <h3 style = "font:italic;font-size:60px;color:darkblue;background-color:lightcyan;">Get to <highlight-red>fucking</highlight-red> work!</h3>
             <img src = "https://i.imgur.com/q04YrKj.jpg" style = "height:400px;width:auto" id = "myImage" onclick = "expressions()">
         </footer>
-
+        <script src = "./index.js"></script>
     </body>
 </html>

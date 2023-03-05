@@ -1,13 +1,7 @@
 /*class selector*/
 
-.brown-text{
-    color:brown;
-    border-color:brown;
-}
-.brown-border{
-    border-style:solid;
-    border-color:brown;
-}
+
+
 /*type selector*/
 highlight-red{
     color:red;
@@ -26,7 +20,7 @@ highlight-red{
 .padded-bluebox{
     background-color:lightblue;
     width:300px;
-    height:300px;
+    height:auto;
     padding:10px;
 }
 .text-card{
@@ -36,11 +30,19 @@ highlight-red{
     border:1px solid black; 
 }
 .text-card-mb {
-    width: 400px;
-    height: auto;
+    vertical-align:top;
+    width: 500px;
+    height: 600px;
     padding: 10px;
     border: 5px solid red;
     margin-bottom: 50px;
+}
+
+.text-card-mb li{
+    color:black;
+    border-color:purple;
+    border-style:solid;
+
 }
 
 .button-next{
