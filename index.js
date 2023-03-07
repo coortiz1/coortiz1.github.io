@@ -17,7 +17,6 @@ function expressions(){
     }                
 }
 
-
 function cross(id){
     var elem = document.getElementById(id);
     if (elem.style.textDecoration === "line-through red"){
@@ -34,6 +33,7 @@ if (localStorage.getItem("exerciseAmount") === null){
     localStorage.setItem("exerciseAmount","0");
 }
 document.getElementById('cross1').innerHTML = 'Exercise (' + localStorage.getItem("exerciseAmount") + ' times)';
+
 function exercise(){
     click = parseInt(localStorage.getItem("exerciseAmount"));
 
@@ -41,30 +41,31 @@ function exercise(){
         click = click + 1;
         document.getElementById('cross1').innerHTML = 'Exercise (' + click.toString() + ' times)';        
     }
-    else if (document.getElementById('cross1').style.textDecoration === "none" && click === 5){
+    else if (document.getElementById('cross1').style.textDecoration === "none" && click > 4){
         click = 0
         document.getElementById('cross1').innerHTML = 'Exercise (0 times)'
     }
     localStorage.setItem("exerciseAmount",click.toString());
 }
-const ids = ['cross1','cross2','cross3','cross4','cross5','cross6'];
 
+const ids = ['cross1','cross2','cross3','cross4','cross5','cross6','day1','day2','day3','day4','day5','day6','day7'];
 
-function reset(){
-    for (let i = 0; i < ids.length; i++){
-        if (document.getElementById(ids[i]).style.textDecoration === "line-through red")
+function reset(id){
+    for (let i = 0; i < id.length; i++){
+        if (document.getElementById(id[i]).style.textDecoration === "line-through red")
         {
-            document.getElementById(ids[i]).style.textDecoration = "none";
+            document.getElementById(id[i]).style.textDecoration = "none";
+
         }
     }
 }
 
 
-function updateCount(){
-    let strike = [0,0,0,0,0,0];  
+function updateCount(id){
+    let strike = [0,0,0,0,0,0,0,0,0,0,0,0,0];  
     let strikeBin = "";
     for (let i = 0; i < ids.length; i++){
-        if (document.getElementById(ids[i]).style.textDecoration === "line-through red"){
+        if (document.getElementById(id[i]).style.textDecoration === "line-through red"){
             strike[i] = 1;
         }
         strikeBin = strikeBin + strike[i].toString();
@@ -74,7 +75,7 @@ function updateCount(){
 
 if (localStorage.getItem("strike") === null)
 {
-    localStorage.setItem("strike","000000");
+    localStorage.setItem("strike","0000000000000");
 }
 let strikeBin = localStorage.getItem("strike");
 

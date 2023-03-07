@@ -31,34 +31,68 @@
             <ul  style = "list-style-type:none;line-height:0%">
 
                 <li>
-                    <button style = "font-size:30px" onclick = "cross('cross1'); exercise(); updateCount();">Done</button>
+                    <button style = "font-size:30px" onclick = "cross('cross1'); exercise(); updateCount(ids);">Done</button>
                     <p id = "cross1" class = "button-next"></p>
                 </li>
                 <li>
-                    <button style = "font-size:30px" onclick = "cross('cross2'); updateCount();">Done</button>
+                    <button style = "font-size:30px" onclick = "cross('cross2'); updateCount(ids);">Done</button>
                     <p id = "cross2" class = "button-next">Sleep at 12AM-1AM</p>
                 </li>
                 <li>
-                    <button style = "font-size:30px" onclick = "cross('cross3'); updateCount();">Done</button>
+                    <button style = "font-size:30px" onclick = "cross('cross3'); updateCount(ids);">Done</button>
                     <p id = "cross3" class = "button-next">Leetcode</p>
                 </li>
                 <li>
-                    <button style = "font-size:30px" onclick = "cross('cross4'); updateCount();">Done</button>
+                    <button style = "font-size:30px" onclick = "cross('cross4'); updateCount(ids);">Done</button>
                     <p id = "cross4" class = "button-next">Apply for Internships</p>
                 </li>
                 <li>
-                    <button style = "font-size:30px" onclick = "cross('cross5'); updateCount();">Done</button>
+                    <button style = "font-size:30px" onclick = "cross('cross5'); updateCount(ids);">Done</button>
                     <p id = "cross5" class = "button-next">Self Learn</p>
                 </li>
                 <li>
-                    <button style = "font-size:30px" onclick = "cross('cross6'); updateCount();">Done</button>
+                    <button style = "font-size:30px" onclick = "cross('cross6'); updateCount(ids);">Done</button>
                     <p id = "cross6" class = "button-next">Shower in Lukewarm Water</p>
                 </li>
                 <li>
-                    <button onclick = "reset(); updateCount();" style = "font-size:30px">Reset</button>
+                    <button onclick = "reset(ids.slice(0,6)); updateCount(ids);" style = "font-size:30px">Reset</button>
                 </li>
             </ul>
         </div>
+
+        <ul class = "text-card-mb" style = "height:600px;display:inline-block;list-style-type:none;line-height:0%;">
+            <li>
+                <button style = "font-size:26px" onclick = "cross('day1'); updateCount(ids);">Done</button>
+                <p id = "day1" class = "button-next">Monday</p>
+            </li>
+            <li>
+                <button style = "font-size:26px" onclick = "cross('day2'); updateCount(ids);">Done</button>
+                <p id = "day2" class = "button-next">Tuesday</p>
+            </li>
+            <li>
+                <button style = "font-size:26px" onclick = "cross('day3'); updateCount(ids);">Done</button>
+                <p id = "day3" class = "button-next">Wednesday</p>
+            </li>
+            <li>
+                <button style = "font-size:26px" onclick = "cross('day4'); updateCount(ids);">Done</button>
+                <p id = "day4" class = "button-next">Thursday</p>
+            </li>
+            <li>
+                <button style = "font-size:26px" onclick = "cross('day5'); updateCount(ids);">Done</button>
+                <p id = "day5" class = "button-next">Friday</p>
+            </li>
+            <li>
+                <button style = "font-size:26px" onclick = "cross('day6'); updateCount(ids);">Done</button>
+                <p id = "day6" class = "button-next">Saturday</p>
+            </li>
+            <li>
+                <button style = "font-size:26px" onclick = "cross('day7'); updateCount(ids);">Done</button>
+                <p id = "day7" class = "button-next">Sunday</p>
+            </li>
+            <li>
+                <button onclick = "reset(ids.slice(6,13)); updateCount(ids);" style = "font-size:30px">Reset</button>
+            </li>
+        </ul>
 
 
 
